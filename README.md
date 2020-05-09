@@ -10,7 +10,7 @@ The app has been created using:
 * Express Handlebars
 * MySQL
 
-The app has been deployed using Heroku on: 
+The app has been deployed using Heroku on: https://shielded-ocean-50015.herokuapp.com/
 
 ## Preview: 
 
