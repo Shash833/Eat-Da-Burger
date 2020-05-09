@@ -9,6 +9,7 @@ router.get("/", function (req, res) {
         const db = {
             burgers: data
         };
+        console.log(db);
         res.render("index", db);
     });
 });
@@ -17,7 +18,8 @@ router.get("/", function (req, res) {
 router.post("/api/burgers", function (req, res) {
     //call 'insertOne' method to create new database entry
     burger.insertOne(
-        req.body.burgerName, function (result) {
+        req.body.burgerName
+        , function (result) {
             res.json(result);
         });
 });

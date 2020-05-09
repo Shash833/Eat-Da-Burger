@@ -19,7 +19,7 @@ const orm = {
     },
     //Method to update a database entry
     updateOne: function (table, columnOne, valueOne, columnTwo, valueTwo, cb) {
-        const query = `UPDATE ${table} SET ${columnOne} = ${valueOne} WHERE ${columnTwo} = ${valueTwo}`
+        const query = `UPDATE ${table} SET ${columnOne} = ${valueOne} WHERE ${columnTwo} = ${valueTwo} `
         connection.query(query, function (err, results) {
             if (err) throw err;
             cb(results)
